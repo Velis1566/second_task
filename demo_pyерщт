@@ -1,0 +1,31 @@
+M = int(input())
+N = int(input())
+if M == 0 and N == 1:
+	print("erorr")
+else:
+	n = 0
+	n1 = 0
+	n2 = 0
+	n3 = 0
+
+
+
+	if M % 2 == 0:
+		n = M / 2
+		N = N + n
+
+		if N % 2 == 0:
+			n2 = N / 2
+		else:
+			n3 = n2 + 4
+	else:
+		M = M + 1
+		n1 = 3
+		n = M / 2
+		N = N + n
+		if N % 2 == 0:
+			n2 = N / 2
+		else:
+			n3 = n2 + 4
+
+	print (n + n1 + n2 + n3)
